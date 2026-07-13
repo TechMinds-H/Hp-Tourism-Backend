@@ -27,10 +27,11 @@ app.get('/', (req, res) => res.json({ message: 'HP Tourism API running' }));
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
 // Connect to MongoDB
-mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => {
-    console.log('Connected to MongoDB');
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-  })
-  .catch((err) => console.error('MongoDB connection error:', err));
+mongoose.connect(process.env.MONGODB_URI)
+  // .then(() => {
+  //   console.log('Connected to MongoDB');
+  //   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  // })
+  // .catch((err) => console.error('MongoDB connection error:', err));
+
+module.exports = app;
