@@ -91,7 +91,7 @@ The system automatically sends two types of emails:
 To test the email service:
 
 1. Use a tool like [Postman](https://www.postman.com/) or `curl`
-2. Send a POST request to `http://localhost:5000/api/applications`
+2. Send a POST request to `http://hp-tourism-backend.vercel.app/api/applications`
 
 **Sample Request Body:**
 ```json
